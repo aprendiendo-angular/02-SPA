@@ -1,0 +1,15 @@
+<div class="card mb-3">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <img class="card-img" [src]="heroe.img" [alt]="heroe.nombre">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{ heroe.nombre | uppercase }}</h5>
+                <p class="card-text">{{ heroe.bio}}</p>
+                <p class="card-text"><small class="text-muted">{{ heroe.aparicion }}</small></p>
+                <button [routerLink]="['/heroe']" type="button" class="btn btn-outline-primary">Regresar</button>
+            </div>
+        </div>
+    </div>
+</div>

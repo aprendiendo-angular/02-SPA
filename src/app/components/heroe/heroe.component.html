@@ -1,0 +1,8 @@
+<div class="row row-cols-1 row-cols-md-3">
+    <div class="col-md-12" *ngIf="heroes.length == 0">
+        <div class="alert alert-info" role="alert">
+            No se encontraron resultados de la busqueda
+        </div>
+    </div>
+    <app-heroe-tarjeta class="col-md-3" [heroe] = "item" *ngFor="let item of heroes"></app-heroe-tarjeta>
+</div>
